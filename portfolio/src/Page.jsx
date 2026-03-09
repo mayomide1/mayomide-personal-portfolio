@@ -38,7 +38,7 @@ const Page = () => {
     <p>Frontend Developer</p>
     <p>I build clean, responsive websites with simple code and user-friendly designs. Specializing in modern web technologies to create exceptional digital experiences.</p>
     <div className='buttons'>
-        <a href='#projects'><button>View my works <IoIosArrowRoundForward /></button></a>
+        <a href='#projects'><button>View my works</button></a>
         <a href='#contact'><button>Get in Touch</button></a>
 
     </div>
