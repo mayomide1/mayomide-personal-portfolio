@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaCode } from "react-icons/fa6";
-import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,        } from "react-icons/fa";
+import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaLongArrowAltRight         } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
@@ -11,6 +11,7 @@ import { SiJavascript,SiNpm  } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Page = () => {
   return (
@@ -37,18 +38,18 @@ const Page = () => {
     <p>Frontend Developer</p>
     <p>I build clean, responsive websites with simple code and user-friendly designs. Specializing in modern web technologies to create exceptional digital experiences.</p>
     <div className='buttons'>
-        <a href='#projects'><button>View my works</button></a>
+        <a href='#projects'><button>View my works <IoIosArrowRoundForward /></button></a>
         <a href='#contact'><button>Get in Touch</button></a>
 
     </div>
     </div>
 
     <div className='left'>
-        <div>
+        <div className='image'>
             <img src=''/>
         </div>
-        <p>Available for freelance</p>
-        <div className='socials'>
+        <p className='about-text text'>Available for freelance</p>
+        <div className='socials home-socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/ayomide-mamukuyomi/' target='_blank' className='social-icons'><FaLinkedin  style={{fontSize:"30px"}}/></a>
         <a href='https://x.com/mayomide_1' target='_blank' className='social-icons'><FaSquareXTwitter style={{fontSize:"30px"}}/></a>
