@@ -1,17 +1,20 @@
 import React from 'react'
 
 import { FaCode } from "react-icons/fa6";
-import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaLongArrowAltRight         } from "react-icons/fa";
+import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaHome,FaUser,FaEnvelope      } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
-import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6"; 
+import { FaLocationDot,FaSquareXTwitter,FaChevronRight,FaAngleLeft  } from "react-icons/fa6"; 
 import { TiStarburstOutline } from "react-icons/ti";
 import { SiJavascript,SiNpm  } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { VscFolderActive,VscTools } from "react-icons/vsc"
+import {  } from "react-icons/vsc" 
+import { LuSlash } from "react-icons/lu";
 
 const Page = () => {
   return (
@@ -19,15 +22,15 @@ const Page = () => {
 
     <div className='nav-bar'>
     <div>
-        <p>MAYOMIDE</p>
+        <p><FaCode style={{color:"#A855F7"}}/>MAYOMIDE</p>
     </div>
     <div>
         <ul>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#skills'>Skills</a></li>
-            <li><a href='#projects'>Projects</a></li>
-            <li><a href='#contact'>Contact</a></li>
+            <li><a href='#home'><FaHome style={{fontSize:"20px", color:"#A855F7"}}/>Home</a></li>
+            <li><a href='#about'><FaUser style={{fontSize:"20px", color:"#A855F7"}}/>About</a></li>
+            <li><a href='#skills'><FaCode style={{fontSize:"20px", color:"#A855F7"}}/>Skills</a></li>
+            <li><a href='#projects'> <VscFolderActive style={{fontSize:"20px", color:"#A855F7"}}/>Projects</a></li>
+            <li><a href='#contact'><FaEnvelope style={{fontSize:"20px", color:"#A855F7"}}/>Contact</a></li>
         </ul>
     </div>
     </div>
@@ -40,10 +43,8 @@ const Page = () => {
     <div className='buttons'>
         <a href='#projects'><button>View my works</button></a>
         <a href='#contact'><button>Get in Touch</button></a>
-
     </div>
     </div>
-
     <div className='left'>
         <div className='image'>
             <img src=''/>
@@ -59,15 +60,14 @@ const Page = () => {
     </section>
 
     <section id='about' >
+        <div className='dot'></div>
     <h2 className='about-text'>{"Get to Know Me".toUpperCase()}</h2>
-    <h1>About Me</h1>
-
+    <h1> <FaUser style={{color:"#A855F7"}}/>About Me</h1>
     <div className='about-container'>
     <div className='left'>
     <p>I'm a frontend developer with a passion for building clean, responsive web experiences. I build with HTML, CSS, JavaScript and React and I'm always learning, always improving. <br/><br/> 
     I care deeply about writing code that is not just functional but also readable and maintainable. When I'm not coding, I'm exploring new technologies and working on personal projects that keep me sharp.</p>
     </div>
-
     <div className='right'>
     <div className='container'>
     <p><FaCode style={{fontSize:"25px"}}/></p>
@@ -95,7 +95,7 @@ const Page = () => {
 
     <section id='skills'>
     <h2 className='about-text'> WHAT I WORK WITH</h2>
-    <h1>Skills & Technologies</h1>
+    <h1><FaCode style={{color:"#A855F7"}}/>Skills & <VscTools style={{color:"#A855F7"}}/>Technologies</h1>
     
     <div className='technologies'>
         <div className='tech'> <FaHtml5 />HTML5</div>
@@ -109,13 +109,13 @@ const Page = () => {
     </div>
 
     <div className='about-text'>Always learning and exploring new technologies</div>
-
     </section> 
 
     <section id='contact'>
     <h2 className='about-text'>GET IN TOUCH</h2>
+    <p className='head-text'>I love working on unique challenges and innovative solutions. <br/>Let's discuss your vision and make it reality.</p>
    <div className="contactcard">
-    <div className='right'>
+    <div className='left'>
          <h1>Let's Connect</h1>
     <div className='contact-cards'>
         <a href='mailto:ayomidemamukuyomi5@gmail.com'>
@@ -127,7 +127,6 @@ const Page = () => {
         </div>
         </div>
         </a>
-
         <a href='tel:+2347016197076'>
         <div className='contact-card'>
         <BsFillTelephoneOutboundFill style={{fontSize:"30px"}}/>
@@ -137,7 +136,6 @@ const Page = () => {
         </div>
         </div>
         </a>
-
         <div className='contact-card'>
         <FaLocationDot style={{fontSize:"30px"}}/>
         <div className="card-detail">
@@ -145,7 +143,6 @@ const Page = () => {
         <a >LAGOS, NG</a>
         </div>
         </div>
-
         <div className='socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/ayomide-mamukuyomi/' target='_blank' className='social-icons'><FaLinkedin  style={{fontSize:"30px"}}/></a>
@@ -155,9 +152,8 @@ const Page = () => {
     </div>
     </div>
 
-    <div className='left'>
+    <div className='right'>
     <h2 className='about-text form-header'>Have a specific project in mind?</h2>
-<p>I love working on unique challenges and innovative solutions. <br/>Let's discuss your vision and make it reality.</p>
     <form>
     <div className='contact-info'>
         <div className='contact-info-group'>
@@ -178,7 +174,7 @@ const Page = () => {
     </section>
 
     <div className='footer'>
-        <p>MAYOMIDE</p>
+        <p><FaCode style={{color:"#A855F7"}}/>MAYOMIDE</p>
         <div className='socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/ayomide-mamukuyomi/' target='_blank' className='social-icons'><FaLinkedin  style={{fontSize:"30px"}}/></a>
