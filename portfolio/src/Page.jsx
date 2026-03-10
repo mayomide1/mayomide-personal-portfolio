@@ -114,7 +114,9 @@ const Page = () => {
 
     <section id='contact'>
     <h2 className='about-text'>GET IN TOUCH</h2>
-    <h1>Let's Connect</h1>
+   <div className="contactcard">
+    <div className='right'>
+         <h1>Let's Connect</h1>
     <div className='contact-cards'>
         <a href='mailto:ayomidemamukuyomi5@gmail.com'>
         <div className='contact-card'>
@@ -151,7 +153,9 @@ const Page = () => {
         <a href='mailto:ayomidemamukuyomi5@gmail.com' target='_blank' className='social-icons'><CiMail style={{fontSize:"30px"}}/></a>
         </div>
     </div>
-    <br/>
+    </div>
+
+    <div className='left'>
     <h2 className='about-text form-header'>Have a specific project in mind?</h2>
 <p>I love working on unique challenges and innovative solutions. <br/>Let's discuss your vision and make it reality.</p>
     <form>
@@ -169,6 +173,8 @@ const Page = () => {
     <textarea placeholder='Write your message here' rows={5} />
     <button type='submit'><a href='mailto:ayomidemamukuyomi5@gmail.com'>Send Message</a></button>
     </form>
+    </div>
+    </div>
     </section>
 
     <div className='footer'>
