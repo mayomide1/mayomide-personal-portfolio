@@ -49,7 +49,7 @@ const Page = () => {
         <div className='image'>
             <img src=''/>
         </div>
-        <p className='about-text text'>Available for freelance</p>
+        <p className='about-text text'><div className='dot'></div>Available for freelance</p>
         <div className='socials home-socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/ayomide-mamukuyomi/' target='_blank' className='social-icons'><FaLinkedin  style={{fontSize:"30px"}}/></a>
@@ -60,7 +60,6 @@ const Page = () => {
     </section>
 
     <section id='about' >
-        <div className='dot'></div>
     <h2 className='about-text'>{"Get to Know Me".toUpperCase()}</h2>
     <h1> <FaUser style={{color:"#A855F7"}}/>About Me</h1>
     <div className='about-container'>
@@ -70,22 +69,22 @@ const Page = () => {
     </div>
     <div className='right'>
     <div className='container'>
-    <p><FaCode style={{fontSize:"25px"}}/></p>
+    <p><FaCode style={{fontSize:"25px", color:"#A855F7" }}/></p>
     <h2>Clean Code</h2>
     <p>I write maintainable, well-documented code that scales with your project's growth.</p>
     </div>
     <div className='container'>
-    <p><FaRegHeart style={{fontSize:"25px"}}/></p>
+    <p><FaRegHeart style={{fontSize:"25px", color:"#A855F7"}}/></p>
     <h2>User-Focused</h2>
     <p>Every design decision I make prioritizes user experience and accessibility.</p>
     </div>
     <div className='container'>
-    <p><FaLightbulb style={{fontSize:"25px"}}/></p>
+    <p><FaLightbulb style={{fontSize:"25px", color:"#A855F7"}}/></p>
     <h2>Innovative</h2>
     <p>I stay updated with the latest technologies to bring fresh solutions to projects.</p>
     </div>
     <div className='container'>
-    <p><VscIssueDraft style={{fontSize:"25px"}}/></p>
+    <p><VscIssueDraft style={{fontSize:"25px", color:"#A855F7"}}/></p>
     <h2>Goal-Oriented</h2>
     <p>I focus on delivering results that meet both user needs and business objectives.</p>
     </div>
@@ -98,17 +97,16 @@ const Page = () => {
     <h1><FaCode style={{color:"#A855F7"}}/>Skills & <VscTools style={{color:"#A855F7"}}/>Technologies</h1>
     
     <div className='technologies'>
-        <div className='tech'> <FaHtml5 />HTML5</div>
-        <div className='tech'><FaCss3Alt />CSS</div>
-        <div className='tech'><SiJavascript/>JavaScript (ES6+)</div>
-        <div className='tech'> <FaGitAlt />Git & <FaGithub />Github</div>
-        <div className='tech'><FaReact />React</div>
-        <div className='tech'><RiTailwindCssFill/>Tailwind CSS</div>
-        <div className='tech'><SiNpm />npm</div>
-        <div className='tech'><VscVscode/>VS Code</div>
+        <div className='tech'> <FaHtml5 style={{color:"#A855F7"}}/>HTML5</div>
+        <div className='tech'><FaCss3Alt style={{color:"#A855F7"}}/>CSS</div>
+        <div className='tech'><SiJavascript style={{color:"#A855F7"}}/>JavaScript (ES6+)</div>
+        <div className='tech'> <FaGitAlt style={{color:"#A855F7"}}/>Git & <FaGithub />Github</div>
+        <div className='tech'><FaReact style={{color:"#A855F7"}}/>React</div>
+        <div className='tech'><RiTailwindCssFill style={{color:"#A855F7"}}/>Tailwind CSS</div>
+        <div className='tech'><SiNpm style={{color:"#A855F7"}}/>npm</div>
+        <div className='tech'><VscVscode style={{color:"#A855F7"}}/>VS Code</div>
     </div>
-
-    <div className='about-text'>Always learning and exploring new technologies</div>
+    <div className='about-text'><div className='dot'></div>Always learning and exploring new technologies</div>
     </section> 
 
     <section id='contact'>

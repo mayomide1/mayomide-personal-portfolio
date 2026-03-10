@@ -90,7 +90,6 @@ section{
 
 .nav-bar p:hover,
 .footer p:nth-child(1):hover{
-  border-bottom: 1px solid var(--text-primary);
   color: var(--accent-purple);
 }
 
@@ -196,6 +195,23 @@ ul li a:hover{
 #home .left .text{
   margin-top: 10px;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* ABOUT SECTION */
@@ -207,8 +223,6 @@ ul li a:hover{
   margin-top: 25px;
   padding: 15px;
 }
-
-
 
 .about-container .left{
   width: 45%;
@@ -243,7 +257,7 @@ ul li a:hover{
 #about .right .container h2,
 #about .right .container p{
   text-align: start;
-  margin-top: 12px !important;
+  margin-top: 18px !important;
 }
 
 #about .right .container p{
@@ -252,7 +266,7 @@ ul li a:hover{
 }
 
 #about .right .container h2{
-  color: var(--accent-purple);
+  color: #fff;
   text-align: start !important;
 }
 
@@ -292,8 +306,13 @@ button:hover{
 #skills .about-text{
   margin-top: 70px;
   margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
+/* CONTACT */
 #contact .head-text{
   font-size: 20px;
   margin: -15px 0 20px;
@@ -492,17 +511,4 @@ button:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.dot {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #8B5CF6;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
 }
