@@ -652,6 +652,14 @@ button:hover{
     font-size: 1.5rem;
   }
 
+  #skills h2,
+  #about h2,
+  #contact h2,
+  #projects h{
+    font-size: 1.5rem;
+    margin-top: 130px;
+  }
+
   /* NAVBAR */
   .nav-bar{
     padding: 15px;
@@ -691,11 +699,15 @@ button:hover{
 
   #home .right{
     order: 1;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   #home .left{
     order: 2;
+  }
+
+  #home .left .image{
+    margin-top: 40px;
   }
 
   #home .right h1{
