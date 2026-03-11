@@ -266,7 +266,6 @@ ul li a:hover{
 #about .right .container p{
   text-align: start;
   margin-top: 18px !important;
-  
 }
 
 #about .right .container p{
@@ -332,7 +331,7 @@ button:hover{
 }
 
 .project-cards .project-card{
-   border: 2px solid var(--border-color);
+  border: 2px solid var(--border-color);
   width: 40%;
   padding: 10px;
   border-radius: 10px;
@@ -343,7 +342,6 @@ button:hover{
 }
 
 .project-cards .project-card img{
-  /* border: 1px solid var(--accent-purple); */
   width: 100%;
   height: 200px;
   border-radius: 8px;
@@ -376,16 +374,16 @@ button:hover{
 #contact .left{
   width: 48%;
   padding: 10px;
-   border-right: 1px solid var(--accent-purple);
+  border-right: 1px solid var(--accent-purple);
 }
 
 #contact .left h1:nth-of-type(1){
-text-align: start;
-padding-left: 30px;
+  text-align: start;
+  padding-left: 30px;
 }
 
 #contact .left .socials{
-padding-right: 300px;
+  padding-right: 300px;
 }
 
 .contact-cards{
@@ -401,10 +399,11 @@ padding-right: 300px;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  width: 90%;
+  width: 500px;
   text-align: start;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   transform: translate(20px);
   transition: all 0.3s ease-in-out;
@@ -429,7 +428,7 @@ a{
 }
 
 #contact .right{
-   width: 50%;
+  width: 50%;
   padding: 10px;
 }
 
@@ -457,6 +456,7 @@ form {
 .contact-info {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -496,7 +496,6 @@ input:hover,
 textarea:hover{
   border: 1px solid var(--accent-purple);
 }
-
 
 input::placeholder,
 textarea::placeholder{
@@ -566,4 +565,298 @@ button:hover{
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+
+/* ================================
+   TABLET VIEW (max-width: 1024px)
+================================ */
+@media (max-width: 1024px) {
+
+  .about-text{
+    width: 55%;
+  }
+
+  /* HOME */
+  #home .right,
+  #home .left{
+    width: 48%;
+    margin-top: 80px;
+  }
+
+  #home .right h1{
+    font-size: 40px;
+  }
+
+  #home .right p:nth-of-type(1){
+    font-size: 36px;
+  }
+
+  #home .right p:nth-of-type(2){
+    font-size: 18px;
+  }
+
+  /* ABOUT */
+  .about-container .left,
+  .about-container .right{
+    width: 48%;
+  }
+
+  .right .container{
+    width: 45%;
+  }
+
+  /* PROJECTS */
+  .project-cards .project-card{
+    width: 45%;
+  }
+
+  /* CONTACT */
+  #contact .left{
+    width: 48%;
+  }
+
+  #contact .right{
+    width: 48%;
+  }
+
+  .contact-cards .contact-card{
+    width: 100%;
+  }
+
+  #contact .left .socials{
+    padding-right: 50px;
+  }
+}
+
+
+/* ================================
+   MOBILE VIEW (max-width: 768px)
+================================ */
+@media (max-width: 768px) {
+
+  section{
+    padding: 20px 15px;
+  }
+
+  .about-text{
+    width: 80%;
+    margin: 40px auto 25px;
+    font-size: 14px;
+  }
+
+  #skills h1,
+  #about h1,
+  #contact h1,
+  #projects h1{
+    font-size: 1.5rem;
+  }
+
+  /* NAVBAR */
+  .nav-bar{
+    padding: 15px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-bar p{
+    transform: translate(0);
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  ul{
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ul li a{
+    font-size: 14px;
+  }
+
+  /* HOME */
+  #home{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  #home .right,
+  #home .left{
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  #home .right{
+    order: 1;
+    margin-top: 30px;
+  }
+
+  #home .left{
+    order: 2;
+  }
+
+  #home .right h1{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #home .right p{
+    text-align: center;
+  }
+
+  #home .right p:nth-of-type(1){
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #home .right p:nth-of-type(2){
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #home .buttons{
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  #home .buttons button{
+    transform: translate(0);
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #home .left .image{
+    width: 90%;
+    transform: translate(0);
+  }
+
+  #home .left .text{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ABOUT */
+  .about-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container .left,
+  .about-container .right{
+    width: 100%;
+  }
+
+  .about-container .left p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .right .container{
+    width: 45%;
+    transform: translate(0);
+  }
+
+  /* SKILLS */
+  .technologies{
+    margin: 50px 0;
+    gap: 15px;
+  }
+
+  .tech{
+    transform: translate(0);
+    font-size: 14px;
+  }
+
+  #skills .about-text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  /* PROJECTS */
+  .project-cards{
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .project-cards .project-card{
+    width: 100%;
+  }
+
+  /* CONTACT */
+  #contact .contactcard{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .left{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--accent-purple);
+    padding-bottom: 20px;
+  }
+
+  #contact .left h1:nth-of-type(1){
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #contact .left .socials{
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  #contact .right{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #contact .right h2{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .contact-cards .contact-card{
+    width: 98%;
+    transform: translate(0);
+  }
+
+  form{
+    padding: 15px;
+  }
+
+  .contact-info{
+    flex-direction: column;
+  }
+
+  button{
+    width: 100%;
+    transform: translate(0);
+  }
+
+  /* FOOTER */
+  .footer{
+    padding: 30px 15px;
+  }
+
+  .footer p:nth-child(1){
+    transform: translate(0);
+    font-size: 18px;
+  }
+
+  .social-icons{
+    transform: translate(0);
+  }
+
+  .tech:hover,
+  .contact-cards .contact-card:first-child:hover,
+  .container:hover,
+  .social-icons:hover,
+  #home .left .image:hover,
+  #home .buttons button:hover,
+  button:hover{
+    transform: translate(0) scale(1.05); /* remove translate offset on mobile */
+  }
 }
