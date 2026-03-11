@@ -1,20 +1,22 @@
 import React from 'react'
 
+import weather_app from './assets/weather-app.jpeg';
+import movie_app from './assets/movie-app.png';
+import tic_tac_toe from './assets/tic-tac-toe.png';
+
 import { FaCode } from "react-icons/fa6";
 import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaHome,FaUser,FaEnvelope      } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { FaLocationDot,FaSquareXTwitter,FaChevronRight,FaAngleLeft  } from "react-icons/fa6"; 
-import { TiStarburstOutline } from "react-icons/ti";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 import { SiJavascript,SiNpm  } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { VscFolderActive,VscTools } from "react-icons/vsc"
-import {  } from "react-icons/vsc" 
-import { LuSlash } from "react-icons/lu";
+
 
 const Page = () => {
   return (
@@ -60,7 +62,7 @@ const Page = () => {
     </section>
 
     <section id='about' >
-    <h2 className='about-text'>{"Get to Know Me".toUpperCase()}</h2>
+    <h2 className='about-text'><div className='dot'></div>{"Get to Know Me".toUpperCase()}</h2>
     <h1> <FaUser style={{color:"#A855F7"}}/>About Me</h1>
     <div className='about-container'>
     <div className='left'>
@@ -93,7 +95,7 @@ const Page = () => {
     </section>
 
     <section id='skills'>
-    <h2 className='about-text'> WHAT I WORK WITH</h2>
+    <h2 className='about-text'><div className='dot'></div> WHAT I WORK WITH</h2>
     <h1><FaCode style={{color:"#A855F7"}}/>Skills & <VscTools style={{color:"#A855F7"}}/>Technologies</h1>
     
     <div className='technologies'>
@@ -109,9 +111,43 @@ const Page = () => {
     <div className='about-text'><div className='dot'></div>Always learning and exploring new technologies</div>
     </section> 
 
+    <section id='projects'>
+        <h2 className='about-text'><div className='dot'></div>{"WHat i have Built".toUpperCase()}</h2>
+        <h1> <VscFolderActive style={{color:"#A855F7"}}/>Projects</h1>
+
+        <div className="project-cards">
+            {/* <div className="project-card">
+                <img src=''/>
+                <p></p>
+                <a href='' target='_blank'><button>Check Live Demo</button></a>
+            </div> */}
+            <div className="project-card">
+                <img src={movie_app}/>
+                <p>FilmSpot</p>
+                <p>FilmSpot is a movie discovery web application that allows users to explore both newly released and older movies. It integrates with a movie API to fetch real-time data and presents it in a clean, responsive, and user-friendly interface.</p>
+                <a href='https://film-spot-1.vercel.app/' target='_blank'><button><BsBoxArrowUpRight/>Check Live Demo</button></a>
+            </div>
+            <div className="project-card">
+                <img src={weather_app}/>
+                <p>Weather App</p>
+                <p>
+                    A responsive weather application that allows users to search for any city and view real-time weather information such as temperature, weather conditions, humidity, and wind speed. The app fetches live data from a weather API and presents it in a clean and user-friendly interface.
+                </p>
+                <a href='https://weather-check-1.vercel.app/' target='_blank'><button><BsBoxArrowUpRight/>Check Live Demo</button></a>
+            </div>
+            <div className="project-card">
+                <img src={tic_tac_toe}/>
+                <p>TicTacToe Game</p>
+                <p> A classic Tic Tac Toe game built with React. Play against the computer in a clean, minimal and responsive interface. Built to strengthen my understanding of React state management and game logic.
+                    Built with: HTML, CSS, ReactJS</p>
+                <a href='https://tic-tac-toe-alpha-one-23.vercel.app/' target='_blank'><button><BsBoxArrowUpRight/>Check Live Demo</button></a>
+            </div>
+        </div>
+    </section>
+
     <section id='contact'>
-    <h2 className='about-text'>GET IN TOUCH</h2>
-    <p className='head-text'>I love working on unique challenges and innovative solutions. <br/>Let's discuss your vision and make it reality.</p>
+    <h2 className='about-text'><div className='dot'></div>GET IN TOUCH</h2>
+    <p className='head-text'>I'm open to new opportunities </p>
    <div className="contactcard">
     <div className='left'>
          <h1>Let's Connect</h1>
@@ -151,7 +187,7 @@ const Page = () => {
     </div>
 
     <div className='right'>
-    <h2 className='about-text form-header'>Have a specific project in mind?</h2>
+    <h2 className='about-text'>Have a specific project in mind?</h2>
     <form>
     <div className='contact-info'>
         <div className='contact-info-group'>

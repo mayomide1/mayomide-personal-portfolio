@@ -40,15 +40,20 @@ section{
 
 #about h2:first-child,
 #skills h2:first-child,
-#contact h2:first-child{
+#contact h2:first-child,
+#projects h2:first-child{
   width: fit-content;
   font-size: 15px;
   color: var(--accent-purple);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #skills h1,
 #about h1,
-#contact h1{
+#contact h1,
+#projects h1{
   width: fit-content;
   margin: 0 auto;
   display: flex;
@@ -208,7 +213,7 @@ ul li a:hover{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: green;
+  background-color: var(--accent-purple);
   animation: blink 1s infinite;
 }
 
@@ -316,6 +321,46 @@ button:hover{
   gap: 10px;
 }
 
+/* PROJECTS SECTION */
+.project-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.project-cards .project-card{
+   border: 2px solid var(--border-color);
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.project-cards .project-card:hover{
+  border: 2px solid var(--accent-purple-hover);
+}
+
+.project-cards .project-card img{
+  /* border: 1px solid var(--accent-purple); */
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.project-cards .project-card p:first-of-type{
+  font-size: 22px ;
+  color: var(--accent-purple);
+}
+
+.project-cards .project-card p{
+  font-size: 18px;
+  text-align: start;
+  margin: 15px;
+  color: var(--text-secondary);
+}
+
 /* CONTACT */
 #contact .head-text{
   font-size: 20px;
@@ -388,14 +433,13 @@ a{
   padding: 10px;
 }
 
-.form-header{
-  margin: 30px auto;
-}
-
 #contact .right h2{
   width: 80%;
-  margin-top: -8px;
-  border: none;
+  margin: -8px auto 0;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form {
@@ -472,9 +516,13 @@ button{
   border-radius: 8px;
   cursor: pointer;
   width: 200px;
-  margin: 0 auto;
+  margin: 0;
   transform: translate(20px);
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 button:hover{
