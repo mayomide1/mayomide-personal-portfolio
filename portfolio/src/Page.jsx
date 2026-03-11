@@ -3,6 +3,7 @@ import React from 'react'
 import weather_app from './assets/weather-app.jpeg';
 import movie_app from './assets/movie-app.png';
 import tic_tac_toe from './assets/tic-tac-toe.png';
+import profile_pic from './assets/profile-pic.jpeg';
 
 import { FaCode } from "react-icons/fa6";
 import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaHome,FaUser,FaEnvelope      } from "react-icons/fa";
@@ -48,9 +49,7 @@ const Page = () => {
     </div>
     </div>
     <div className='left'>
-        <div className='image'>
-            <img src=''/>
-        </div>
+        <div className='image'><img src={profile_pic}/></div>
         <p className='about-text text'><div className='dot'></div>Available for freelance</p>
         <div className='socials home-socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>

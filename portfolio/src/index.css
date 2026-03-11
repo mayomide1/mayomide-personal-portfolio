@@ -191,14 +191,22 @@ ul li a:hover{
 
 #home .left .image{
   border: 1px solid var(--accent-purple);
-  width: 70%;
+  width: 50%;
   height: 280px;
   margin: 15px auto;
   border-radius: 12px;
   background: var(--card-bg);
   transform: translate(20px);
   transition: all 0.3s ease-in-out;
+  padding: 0;
 }
+
+  #home .left .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 
 #home .left .text{
   margin-top: 10px;
@@ -740,8 +748,15 @@ button:hover{
   }
 
   #home .left .image{
-    width: 90%;
+    width: 50%;
     transform: translate(0);
+  }
+
+  #home .left .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
   #home .left .text{
