@@ -635,7 +635,7 @@ button:hover{
 @media (max-width: 768px) {
 
   section{
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
 
   .about-text{
@@ -859,7 +859,7 @@ button:hover{
   }
 
   .contact-cards .contact-card{
-    width: 400px;
+    width: 390px;
     transform: translate(0);
   }
 
