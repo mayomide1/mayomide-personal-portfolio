@@ -663,7 +663,7 @@ button:hover{
   .nav-bar{
     padding: 5px;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
   }
 
   .nav-bar p{
@@ -674,13 +674,13 @@ button:hover{
   }
 
   ul{
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
     width: 100%;
   }
 
   ul li a{
-    font-size: 14px;
+    font-size: 10px;
   }
 
   /* HOME */
@@ -706,7 +706,7 @@ button:hover{
   }
 
   #home .left .image{
-    margin-top: 15px;
+    margin-top: 0;
   }
 
   #home .right h1{
@@ -730,7 +730,7 @@ button:hover{
 
   #home .buttons{
     justify-content: center;
-    margin-top: 30px;
+    margin: 15px 0;
   }
 
   #home .buttons button{
@@ -785,7 +785,7 @@ button:hover{
   }
 
   #skills h1{
-    margin-top: -65px;
+    margin-top: -45px;
   }
 
   .technologies{
@@ -793,7 +793,7 @@ button:hover{
     gap: 15px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
   }
 
   .tech{
@@ -803,8 +803,8 @@ button:hover{
 
   #skills .about-text:nth-of-type(2){
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top:55px;
+    margin-bottom: 55px;
     font-size: 15px;
   }
 
@@ -858,9 +858,15 @@ button:hover{
     font-size: 20px;
   }
 
+  .contact-cards{
+    padding: 5px;
+  }
+
   .contact-cards .contact-card{
-    width: 390px;
+    width: 100%;
     transform: translate(0);
+    margin: 10px auto;
+      gap: 10px;
   }
 
   form{
