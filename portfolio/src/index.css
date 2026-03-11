@@ -629,7 +629,6 @@ button:hover{
   }
 }
 
-
 /* ================================
    MOBILE VIEW (max-width: 768px)
 ================================ */
@@ -657,7 +656,7 @@ button:hover{
   #contact h2,
   #projects h{
     font-size: 1.5rem;
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   /* NAVBAR */
@@ -707,7 +706,7 @@ button:hover{
   }
 
   #home .left .image{
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   #home .right h1{
