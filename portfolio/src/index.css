@@ -42,6 +42,7 @@ section{
 #skills h2:first-child,
 #contact h2:first-child{
   width: fit-content;
+  font-size: 15px;
   color: var(--accent-purple);
 }
 
@@ -53,9 +54,11 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
   gap: 10px;
   color: var(--text-primary);
   font-size: 2rem;
+  border-bottom: 2px solid var(--accent-purple);
 }
 
 /* NAVBAR */
@@ -258,6 +261,7 @@ ul li a:hover{
 #about .right .container p{
   text-align: start;
   margin-top: 18px !important;
+  
 }
 
 #about .right .container p{
@@ -508,7 +512,10 @@ button:hover{
 }
 
 .footer p:nth-of-type(2){
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }

@@ -179,7 +179,7 @@ const Page = () => {
         <a href='https://x.com/mayomide_1' target='_blank' className='social-icons'><FaSquareXTwitter style={{fontSize:"30px"}}/></a>
         <a href='mailto:ayomidemamukuyomi5@gmail.com' target='_blank' className='social-icons'><CiMail style={{fontSize:"30px"}}/></a>
         </div>
-        <p><FaRegCopyright /> {new Date().getFullYear()}</p>
+        <p><FaRegCopyright /> {new Date().getFullYear()} Mamukuyomi Ayomide</p>
     </div>
     </div>
   )
