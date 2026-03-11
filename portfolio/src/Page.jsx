@@ -108,7 +108,7 @@ const Page = () => {
         <div className='tech'><SiNpm style={{color:"#A855F7"}}/>npm</div>
         <div className='tech'><VscVscode style={{color:"#A855F7"}}/>VS Code</div>
     </div>
-    <div className='about-text'><div className='dot'></div>Always learning and exploring new technologies</div>
+    <div className='about-text'><div className='dot'></div>Always learning and exploring new skills & technologies</div>
     </section> 
 
     <section id='projects'>
