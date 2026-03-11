@@ -663,7 +663,7 @@ button:hover{
   .nav-bar{
     padding: 15px;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
   }
 
   .nav-bar p{
