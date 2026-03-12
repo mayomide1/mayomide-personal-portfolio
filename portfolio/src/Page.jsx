@@ -29,11 +29,11 @@ const Page = () => {
     </div>
     <div>
         <ul>
-            <li><a href='#home'><FaHome style={{fontSize:"20px", color:"#A855F7"}}/>Home</a></li>
-            <li><a href='#about'><FaUser style={{fontSize:"20px", color:"#A855F7"}}/>About</a></li>
-            <li><a href='#skills'><FaCode style={{fontSize:"20px", color:"#A855F7"}}/>Skills</a></li>
-            <li><a href='#projects'> <VscFolderActive style={{fontSize:"20px", color:"#A855F7"}}/>Projects</a></li>
-            <li><a href='#contact'><FaEnvelope style={{fontSize:"20px", color:"#A855F7"}}/>Contact</a></li>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#projects'> Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
         </ul>
     </div>
     </div>
@@ -50,7 +50,7 @@ const Page = () => {
     </div>
     <div className='left'>
         <div className='image'><img src={profile_pic}/></div>
-        <p className='about-text text'><div className='dot'></div>Available for freelance</p>
+        <p className='about-text text'><div className='dot'></div>Available for work</p>
         <div className='socials home-socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/ayomide-mamukuyomi/' target='_blank' className='social-icons'><FaLinkedin  style={{fontSize:"30px"}}/></a>
@@ -101,7 +101,8 @@ const Page = () => {
         <div className='tech'> <FaHtml5 style={{color:"#A855F7"}}/>HTML5</div>
         <div className='tech'><FaCss3Alt style={{color:"#A855F7"}}/>CSS</div>
         <div className='tech'><SiJavascript style={{color:"#A855F7"}}/>JavaScript (ES6+)</div>
-        <div className='tech'> <FaGitAlt style={{color:"#A855F7"}}/>Git & <FaGithub />Github</div>
+        <div className='tech'> <FaGitAlt style={{color:"#A855F7"}}/>Git</div>
+        <div className='tech'> <FaGithub style={{color:"#A855F7"}}/>Github</div>
         <div className='tech'><FaReact style={{color:"#A855F7"}}/>React</div>
         <div className='tech'><RiTailwindCssFill style={{color:"#A855F7"}}/>Tailwind CSS</div>
         <div className='tech'><SiNpm style={{color:"#A855F7"}}/>npm</div>
