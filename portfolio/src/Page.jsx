@@ -1,25 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import weather_app from './assets/weather-app.jpeg';
 import movie_app from './assets/movie-app.png';
 import tic_tac_toe from './assets/tic-tac-toe.png';
 import profile_pic from './assets/profile-pic.jpeg';
 
-import { FaCode } from "react-icons/fa6";
-import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaHome,FaUser,FaEnvelope      } from "react-icons/fa";
+import { FaCode,FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
+import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,      } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
-import { FaLocationDot,FaSquareXTwitter,FaChevronRight,FaAngleLeft  } from "react-icons/fa6"; 
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { SiJavascript,SiNpm  } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
-import { VscFolderActive,VscTools } from "react-icons/vsc"
+import { VscFolderActive,VscTools } from "react-icons/vsc";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+
 
 
 const Page = () => {
+ const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
 
@@ -28,7 +31,7 @@ const Page = () => {
         <p><FaCode style={{color:"#A855F7"}}/>MAYOMIDE</p>
     </div>
     <div>
-        <ul>
+        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
             <li><a href='#home'>Home</a></li>
             <li><a href='#about'>About</a></li>
             <li><a href='#skills'>Skills</a></li>
@@ -36,6 +39,7 @@ const Page = () => {
             <li><a href='#contact'>Contact</a></li>
         </ul>
     </div>
+     <div className='hamburger-icon' onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <RxCross2 /> : <RxHamburgerMenu />}</div>
     </div>
 
     <section id='home'>
