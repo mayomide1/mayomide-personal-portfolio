@@ -395,12 +395,17 @@ button:hover{
 #contact .left{
   width: 48%;
   padding: 10px;
-  border-right: 1px solid var(--accent-purple);
 }
 
 #contact .left h1:nth-of-type(1){
   text-align: start;
   padding-left: 30px;
+}
+
+#contact .left h2{
+  margin: 0 auto 0;
+  font-size: 20px;
+  color: var(--text-primary);
 }
 
 #contact .left .socials{
@@ -448,32 +453,6 @@ a{
   color: var(--text-primary);
 }
 
-#contact .right{
-  width: 50%;
-  padding: 10px;
-}
-
-#contact .right h2{
-  width: 80%;
-  margin: -8px auto 0;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  width: 100%;
-  margin: 20px auto;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  background: var(--card-bg);
-}
-
 .contact-info {
   display: flex;
   flex-direction: row;
@@ -497,58 +476,7 @@ form {
   margin-bottom: 8px;
 }
 
-.label{
-  text-align: start;
-  color: var(--accent-purple);
-  margin: 5px;
-}
-
-input,
-textarea{
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  outline: none;
-  background: var(--card-bg);
-  color: var(--text-primary);
-}
-
-input:hover,
-textarea:hover{
-  border: 1px solid var(--accent-purple);
-}
-
-input::placeholder,
-textarea::placeholder{
-  color: var(--text-secondary);
-  font-size: 14px;
-}
-
-textarea{
-  resize: none;
-}
-
-button{
-  padding: 12px 20px;
-  background: var(--accent-purple);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 200px;
-  margin: 0;
-  transform: translate(20px);
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-button:hover{
-  background: var(--accent-purple-hover);
-}
-
+/* FOOTER */
 .footer{
   width: 100%;
   padding: 50px;
@@ -849,7 +777,7 @@ button:hover{
   }
 
   .technologies{
-    margin: 10px 0;
+    margin: 30px 0;
     gap: 15px;
     display: flex;
     flex-direction: column;
@@ -869,7 +797,7 @@ button:hover{
 
   #skills .about-text:nth-of-type(2){
     width: 100%;
-    margin-top:55px;
+    margin-top:30px;
     margin-bottom: 55px;
     font-size: 14px;
   }
@@ -899,8 +827,6 @@ button:hover{
 
   #contact .left{
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--accent-purple);
     padding-bottom: 20px;
   }
 
@@ -908,20 +834,15 @@ button:hover{
     text-align: center;
     padding-left: 0;
   }
+#contact .left h2{
+  margin: 10px auto 0;
+  font-size: 20px;
+  color: var(--text-primary);
+}
 
   #contact .left .socials{
     padding-right: 0;
     justify-content: center;
-  }
-
-  #contact .right{
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  #contact .right h2{
-    width: 100%;
-    font-size: 20px;
   }
 
   .contact-cards{
@@ -933,19 +854,6 @@ button:hover{
     transform: translate(0);
     margin: 10px auto;
       gap: 10px;
-  }
-
-  form{
-    padding: 15px;
-  }
-
-  .contact-info{
-    flex-direction: column;
-  }
-
-  button{
-    width: 100%;
-    transform: translate(0);
   }
 
   /* FOOTER */

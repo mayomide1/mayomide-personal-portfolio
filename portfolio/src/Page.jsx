@@ -6,7 +6,7 @@ import tic_tac_toe from './assets/tic-tac-toe.png';
 import profile_pic from './assets/profile-pic.jpeg';
 
 import { FaCode,FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
-import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,      } from "react-icons/fa";
+import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,FaWhatsapp       } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
@@ -154,7 +154,7 @@ const Page = () => {
     <p className='head-text'>I'm open to new opportunities </p>
    <div className="contactcard">
     <div className='left'>
-         <h1>Let's Connect</h1>
+         <h2 className='about-text'>Have a specific project in mind?<br/> <br/> Let's Connect</h2>
     <div className='contact-cards'>
         <a href='mailto:ayomidemamukuyomi5@gmail.com'>
         <div className='contact-card'>
@@ -167,10 +167,10 @@ const Page = () => {
         </a>
         <a href='tel:+2347016197076'>
         <div className='contact-card'>
-        <BsFillTelephoneOutboundFill style={{fontSize:"30px"}}/>
+        <FaWhatsapp  style={{fontSize:"30px"}}/>
         <div className="card-detail">
-        <p>Phone</p>
-        <a href='tel:+2347016197076'>07016197076</a>
+        <p>Whatsapp</p>
+        <a href='https://wa.me/2347016197076' target='_blank'>07016197076</a>
         </div>
         </div>
         </a>
@@ -188,25 +188,6 @@ const Page = () => {
         <a href='mailto:ayomidemamukuyomi5@gmail.com' target='_blank' className='social-icons'><CiMail style={{fontSize:"30px"}}/></a>
         </div>
     </div>
-    </div>
-
-    <div className='right'>
-    <h2 className='about-text'>Have a specific project in mind?</h2>
-    <form>
-    <div className='contact-info'>
-        <div className='contact-info-group'>
-        <label className='label'>Your Name</label>
-        <input type='text' placeholder='Enter Your Full Name' />
-        </div>
-        <div className='contact-info-group'>
-        <label className='label'>Your Email</label>
-        <input type='email' placeholder='Enter Your Email Address' />
-        </div>
-    </div>
-    <label className='label'>Your Message</label>
-    <textarea placeholder='Write your message here' rows={5} />
-    <button type='submit'><a href='mailto:ayomidemamukuyomi5@gmail.com'>Send Message</a></button>
-    </form>
     </div>
     </div>
     </section>
