@@ -711,12 +711,14 @@ a{
 
   #home .buttons{
     justify-content: center;
-    margin: 15px 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
   }
 
   #home .buttons button{
     transform: translate(0);
-    width: 100%;
+    width: 150px;
     font-size: 16px;
   }
 
