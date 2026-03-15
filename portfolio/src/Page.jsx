@@ -165,7 +165,7 @@ const Page = () => {
         </div>
         </div>
         </a>
-        <a href='tel:+2347016197076'>
+        <a href='https://wa.me/2347016197076'>
         <div className='contact-card'>
         <FaWhatsapp  style={{fontSize:"30px"}}/>
         <div className="card-detail">
