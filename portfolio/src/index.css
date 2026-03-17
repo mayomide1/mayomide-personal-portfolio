@@ -182,6 +182,8 @@ ul li a:hover{
 }
 
 #home .buttons button{
+  width: fit-content;
+  padding: 10px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -189,7 +191,7 @@ ul li a:hover{
   gap: 10px;
   background: var(--accent-purple);
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -355,6 +357,8 @@ button:hover{
   width: 40%;
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-cards .project-card:hover{
@@ -365,11 +369,17 @@ button:hover{
   width: 100%;
   height: 200px;
   border-radius: 8px;
+  object-fit: contain;
+  border: 1px solid var(--border-color);
+}
+
+.project-cards .project-card img:hover{
   object-fit: cover;
+  border: 1px solid var(--accent-purple);
 }
 
 .project-cards .project-card p:first-of-type{
-  font-size: 22px ;
+  font-size: 20px ;
   color: var(--accent-purple);
 }
 
@@ -378,6 +388,29 @@ button:hover{
   text-align: start;
   margin: 15px;
   color: var(--text-secondary);
+}
+
+.project-cards .project-card button{
+  width: fit-content;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--accent-purple);
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transform: translate(20px);
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+#home .buttons button:hover{
+  background: var(--accent-purple-hover);
 }
 
 /* CONTACT */

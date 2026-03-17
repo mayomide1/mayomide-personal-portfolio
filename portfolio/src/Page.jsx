@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import weather_app from './assets/weather-app.jpeg';
 import movie_app from './assets/movie-app.png';
 import tic_tac_toe from './assets/tic-tac-toe.png';
+import devfinder from './assets/devfinder.png';
 import profile_pic from './assets/profile-pic.jpeg';
 
 import { FaCode,FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
@@ -120,11 +121,12 @@ const Page = () => {
         <h1> <VscFolderActive style={{color:"#A855F7"}}/>Projects</h1>
 
         <div className="project-cards">
-            {/* <div className="project-card">
-                <img src=''/>
-                <p></p>
-                <a href='' target='_blank'><button>Check Live Demo</button></a>
-            </div> */}
+            <div className="project-card">
+                <img src={devfinder}/>
+                <p>DevFinder</p>
+                <p>DevFinder is a responsive website that allows you to instantly discover any developer's GitHub profile. Simply enter the GitHub username of the developer and view their name, username, bio, numbers of repositories, followers and location. Perfect for developers, recruiters and students looking for inspiration, or collaboration</p>
+                <a href='https://dev-finder-com.vercel.app/' target='_blank'><button>Check Live Demo</button></a>
+            </div>
             <div className="project-card">
                 <img src={movie_app}/>
                 <p>FilmSpot</p>
