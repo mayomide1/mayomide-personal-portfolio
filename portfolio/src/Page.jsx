@@ -35,7 +35,7 @@ const Page = () => {
  }
 
  window.onload = function(){
-    if(this.localStorage.getItem("theme") === "lightmode"){
+    if(localStorage.getItem("theme") === "lightmode"){
         document.body.classList.toggle("light-mode")
     }
  }
