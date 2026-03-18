@@ -7,7 +7,7 @@ import devfinder from './assets/devfinder.png';
 import profile_pic from './assets/profile-pic.jpeg';
 
 import { FaCode,FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
-import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,FaWhatsapp       } from "react-icons/fa";
+import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,FaWhatsapp,FaMoon,FaSun      } from "react-icons/fa";
 import { VscIssueDraft } from "react-icons/vsc";
 import { IoIosMail } from "react-icons/io";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
@@ -23,11 +23,27 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Page = () => {
  const [menuOpen, setMenuOpen] = useState(false);
+ const [themeMode, setThemeMode] = useState(false)
+
+ function darkMode(){
+    setThemeMode(!themeMode)
+    if(document.body.classList.toggle("light-mode")){
+    localStorage.setItem("theme", "lightmode")
+    }else{
+    localStorage.setItem("theme", "darkmode")
+    }
+ }
+
+ window.onload = function(){
+    if(this.localStorage.getItem("theme") === "lightmode"){
+        document.body.classList.toggle("light-mode")
+    }
+ }
 
   return (
-    <div>
+    <div className={themeMode ? "light-mode": ""}>
 
-    <div className='nav-bar'>
+    <nav className='nav-bar'>
     <div>
         <p><FaCode style={{color:"#A855F7"}}/>MAYOMIDE</p>
     </div>
@@ -41,7 +57,10 @@ const Page = () => {
         </ul>
     </div>
      <div className='hamburger-icon' onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <RxCross2 /> : <RxHamburgerMenu />}</div>
-    </div>
+     <div className='dark-mode-icon' onClick={darkMode}>{themeMode ? <FaMoon  /> : <FaSun  />}</div>
+     
+     
+    </nav>
 
     <section id='home'>
     <div className='right'>
@@ -194,7 +213,7 @@ const Page = () => {
     </div>
     </section>
 
-    <div className='footer'>
+    <footer className='footer'>
         <p><FaCode style={{color:"#A855F7"}}/>MAYOMIDE</p>
         <div className='socials'>
         <a href='https://github.com/mayomide1' target='_blank' className='social-icons'><FaGithub style={{fontSize:"30px"}}/></a>
@@ -203,7 +222,7 @@ const Page = () => {
         <a href='mailto:ayomidemamukuyomi5@gmail.com' target='_blank' className='social-icons'><CiMail style={{fontSize:"30px"}}/></a>
         </div>
         <p><FaRegCopyright /> {new Date().getFullYear()} Mamukuyomi Ayomide</p>
-    </div>
+    </footer>
     </div>
   )
 }
