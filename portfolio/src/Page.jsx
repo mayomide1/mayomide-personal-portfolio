@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import weather_app from './assets/weather-app.jpeg';
 import movie_app from './assets/movie-app.png';
@@ -34,11 +34,12 @@ const Page = () => {
     }
  }
 
- window.onload = function(){
+ useEffect(() => {
     if(localStorage.getItem("theme") === "lightmode"){
         document.body.classList.toggle("light-mode")
+        setThemeMode(true)
     }
- }
+ })
 
   return (
     <div className={themeMode ? "light-mode": ""}>
