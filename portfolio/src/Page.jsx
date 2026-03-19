@@ -36,10 +36,10 @@ const Page = () => {
 
  useEffect(() => {
     if(localStorage.getItem("theme") === "lightmode"){
-        document.body.classList.toggle("light-mode")
+        document.body.classList.add("light-mode")
         setThemeMode(true)
     }
- })
+ }, [])
 
   return (
     <div className={themeMode ? "light-mode": ""}>
