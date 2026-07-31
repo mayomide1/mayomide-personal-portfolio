@@ -146,7 +146,7 @@ const Page = () => {
                 <img src={EventEase}/>
                 <p>EventEase</p>
                 <p>EventEase is a full-featured, web-based event ticketing and management platform I built specifically for campus and small-scale events. It bridges the gap between organizers and attendees by providing a seamless, all-in-one solution for creating, promoting, and booking events.</p>
-                <a href='https://dev-finder-com.vercel.app/' target='_blank'><button>Check Live Demo</button></a>
+                <a href='#' target='_blank'><button>Check Live Demo</button></a>
             </div>
             <div className="project-card">
                 <img src={devfinder}/>
