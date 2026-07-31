@@ -5,6 +5,7 @@ import movie_app from './assets/movie-app.png';
 import tic_tac_toe from './assets/tic-tac-toe.png';
 import devfinder from './assets/devfinder.png';
 import profile_pic from './assets/profile-pic.jpeg';
+import EventEase from './assets/EventEase.jpeg';
 
 import { FaCode,FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
 import { FaRegHeart,FaLightbulb,FaGithub,FaLinkedin,FaRegCopyright,FaHtml5,FaCss3Alt,FaGitAlt,FaReact,FaUser,FaWhatsapp,FaMoon,FaSun      } from "react-icons/fa";
@@ -141,6 +142,12 @@ const Page = () => {
         <h1> <VscFolderActive style={{color:"#A855F7"}}/>Projects</h1>
 
         <div className="project-cards">
+            <div className="project-card">
+                <img src={EventEase}/>
+                <p>EventEase</p>
+                <p>EventEase is a full-featured, web-based event ticketing and management platform I built specifically for campus and small-scale events. It bridges the gap between organizers and attendees by providing a seamless, all-in-one solution for creating, promoting, and booking events.</p>
+                <a href='https://dev-finder-com.vercel.app/' target='_blank'><button>Check Live Demo</button></a>
+            </div>
             <div className="project-card">
                 <img src={devfinder}/>
                 <p>DevFinder</p>
