@@ -1,13 +1,12 @@
 import React from "react";
 import Page from "./Page";
 
-const App = () =>{
-  return(
+const App = () => {
+  return (
     <>
-    <Page/>
+      <Page />
     </>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;
