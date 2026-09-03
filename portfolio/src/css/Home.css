@@ -1,0 +1,93 @@
+#home {
+  width: 100%;
+  padding: 100px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#home .right,
+#home .left {
+  width: 50%;
+  margin-top: 110px;
+  padding: 10px;
+}
+
+#home .right h1 {
+  text-align: start;
+  font-size: 55px;
+  color: var(--text-primary);
+}
+
+#home .right p {
+  margin: 25px 0;
+  text-align: start;
+}
+
+#home .right p:nth-of-type(1) {
+  color: var(--accent-purple);
+  font-size: 50px;
+}
+
+#home .right p:nth-of-type(2) {
+  font-size: 22px;
+  color: var(--text-secondary);
+}
+
+#home .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  gap: 20px;
+}
+
+#home .buttons button {
+  width: fit-content;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--accent-purple);
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transform: translate(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+#home .buttons button:hover {
+  background: var(--accent-purple-hover);
+}
+
+#home .left .image {
+  border: 1px solid var(--accent-purple);
+  width: 50%;
+  height: 280px;
+  margin: 15px auto;
+  border-radius: 12px;
+  background: var(--card-bg);
+  transform: translate(20px);
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+
+#home .left .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#home .left .text {
+  margin-top: 10px;
+  margin-right: 140px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
