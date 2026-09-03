@@ -412,18 +412,18 @@ const Page = () => {
               <br /> <br /> Let's Connect
             </h2>
             <div className="contact-cards">
-              <a href="mailto:ayomidemamukuyomi5@gmail.com">
+              <a href="mailto:ayomidemamukuyomi5@gmail.com" target="_blank">
                 <div className="contact-card">
                   <IoIosMail style={{ fontSize: "30px" }} />
                   <div className="card-detail">
                     <p>Email</p>
-                    <a href="mailto:ayomidemamukuyomi5@gmail.com">
+                    <a href="mailto:ayomidemamukuyomi5@gmail.com" target="_blank">
                       ayomidemamkuyomi5@gmail.com
                     </a>
                   </div>
                 </div>
               </a>
-              <a href="https://wa.me/2347016197076">
+              <a href="https://wa.me/2347016197076" target="_blank">
                 <div className="contact-card">
                   <FaWhatsapp style={{ fontSize: "30px" }} />
                   <div className="card-detail">

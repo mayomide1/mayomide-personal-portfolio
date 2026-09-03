@@ -351,8 +351,7 @@ ul li a:hover {
 .container:hover,
 .social-icons:hover,
 #home .left .image:hover,
-#home .buttons button:hover,
-button:hover {
+#home .buttons button:hover{
   transform: translate(20px) scale(1.05);
   box-shadow: 0px 4px 15px rgba(168, 85, 247, 0.4);
 }
@@ -415,7 +414,7 @@ button:hover {
 }
 
 .project-cards .project-card button {
-  width: 100%;
+  width: 80%;
   height: 40px;
   padding: 10px;
   display: flex;
@@ -428,13 +427,13 @@ button:hover {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-#home .buttons button:hover,
-.project-cards .project-card button:hover {
-  background: var(--accent-purple-hover);
-  transform: translate(20px) scale(1.05);
+.project-cards .project-card button:hover{
+  transform: translate(1px) scale(1.05);
+  background-color: var(--accent-purple-hover);
 }
 
 /* CONTACT */
@@ -472,8 +471,9 @@ button:hover {
 .contact-cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 
 .contact-cards .contact-card {
@@ -503,6 +503,10 @@ button:hover {
 .right .container:hover,
 form:hover {
   border: 1px solid var(--accent-purple);
+}
+
+.contact-cards .socials{
+  margin: 10px auto;
 }
 
 a {
@@ -931,8 +935,7 @@ a {
   .container:hover,
   .social-icons:hover,
   #home .left .image:hover,
-  #home .buttons button:hover,
-  button:hover {
+  #home .buttons button:hover{
     transform: translate(0) scale(1.05);
   }
 }
