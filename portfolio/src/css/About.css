@@ -52,3 +52,35 @@
   color: var(--accent-purple);
   text-align: start !important;
 }
+
+@media (max-width: 768px) {
+
+  #about h1 {
+    margin-top: -20px;
+  }
+
+  #about p:first-of-type {
+    margin-top: -25px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .about-container .left,
+  .about-container .right {
+    width: 100%;
+  }
+
+  .about-container .left p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .right .container {
+    width: 45%;
+    transform: translate(0);
+  }
+}

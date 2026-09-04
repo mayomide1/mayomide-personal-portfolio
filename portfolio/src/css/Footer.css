@@ -19,3 +19,27 @@
   justify-content: center;
   gap: 5px;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer p:nth-child(1) {
+    transform: translate(0);
+    font-size: 18px;
+  }
+
+  .social-icons {
+    transform: translate(0);
+  }
+
+  .tech:hover,
+  .contact-cards .contact-card:first-child:hover,
+  .container:hover,
+  .social-icons:hover,
+  #home .left .image:hover,
+  #home .buttons button:hover{
+    transform: translate(0) scale(1.05);
+  }
+}
