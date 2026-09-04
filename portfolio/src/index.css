@@ -174,69 +174,6 @@ ul li a:hover {
   }
 }
 
-/* ================================
-   TABLET VIEW (max-width: 1024px)
-================================ */
-@media (max-width: 1024px) {
-  .about-text {
-    width: 55%;
-  }
-
-  /* HOME */
-  #home .right,
-  #home .left {
-    width: 48%;
-    margin-top: 80px;
-  }
-
-  #home .right h1 {
-    font-size: 40px;
-  }
-
-  #home .right p:nth-of-type(1) {
-    font-size: 36px;
-  }
-
-  #home .right p:nth-of-type(2) {
-    font-size: 18px;
-  }
-
-  /* ABOUT */
-  .about-container .left,
-  .about-container .right {
-    width: 48%;
-  }
-
-  .right .container {
-    width: 45%;
-  }
-
-  /* PROJECTS */
-  .project-cards .project-card {
-    width: 45%;
-  }
-
-  /* CONTACT */
-  #contact .left {
-    width: 48%;
-  }
-
-  #contact .right {
-    width: 48%;
-  }
-
-  .contact-cards .contact-card {
-    width: 100%;
-  }
-
-  #contact .left .socials {
-    padding-right: 50px;
-  }
-}
-
-/* ================================
-   MOBILE VIEW (max-width: 768px)
-================================ */
 @media (max-width: 768px) {
   section {
     padding: 20px 10px;

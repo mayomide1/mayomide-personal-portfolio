@@ -53,7 +53,7 @@
   text-align: start !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 1024px) {
 
   #about h1 {
     margin-top: -20px;

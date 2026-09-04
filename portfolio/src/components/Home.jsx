@@ -10,7 +10,7 @@ const Home = () => {
         <h1>
           Hi, I'm <br /> Mamukuyomi Ayomide
         </h1>
-        <p>Frontend Developer</p>
+        <p>FullStack Developer</p>
         <p>
           I build clean, responsive websites with simple code and user-friendly
           designs. Specializing in modern web technologies to create exceptional

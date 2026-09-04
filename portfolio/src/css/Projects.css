@@ -68,7 +68,7 @@
   background-color: var(--accent-purple-hover);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 1024px) {
      #projects h2:first-of-type {
     margin-top: 60px;
     margin-bottom: 0;
