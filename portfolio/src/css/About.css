@@ -33,8 +33,8 @@
   width: 40%;
   border-radius: 12px;
   padding: 12px;
-  transform: translate(20px);
-  transition: all 0.3s ease-in-out;
+  transform: translateX(20px);
+  transition: transform 0.3s ease-in-out;
 }
 
 #about .right .container h2,
